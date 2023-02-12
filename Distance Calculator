@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class DistanceCalc {
+        public static void main(String[] args) {
+            Scanner input = new Scanner(System.in);
+            System.out.print("Enter the Value X  number: ");
+            int x = input.nextInt();// Taking input of x
+            System.out.print("Enter the Value Y number: ");
+            int y = input.nextInt(); // Taking input of y
+            System.out.print("Enter the X_1 number: ");
+            int x_1 = input.nextInt(); // Taking input of x_1
+            System.out.print("Enter the Y_1 number: ");
+            int y_1 = input.nextInt();// Taking input of y_1
+            double distance = Math.sqrt(Math.pow(x - x_1, 2) + Math.pow(y - y_1, 2)); // Calculation of the Distance 
+            System.out.println("The Distance is Between these points is  " + distance); // Displaying Result
+
+        }
+}
