@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class EmailPrototype {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+    String email = "itachiuchiha@gmail.com";// An Example of EmailPrototype;
+    String password = "lastuchiha"; // Prototype of Password;
+
+    String email_input, password_input , input_tryagain ; // Email and Password Inputs;
+
+       do {
+           System.out.println("Enter your Email: ");
+           email_input = scanner.nextLine();
+
+           if (email.equals(email_input)) {
+               System.out.println("Enter your Password: ");
+               password_input = scanner.nextLine();
+
+               if (password.equals(password_input)) {
+                   System.out.println("Welcome to your Email Prototype!");
+               }
+               else {
+                   System.out.println("Wrong Password!");
+               }
+           }
+           else {
+               System.out.println("Wrong Email!");
+           }
+           System.out.println("Do you wan to try again? (y/n)");
+           input_tryagain = scanner.nextLine();
+       }
+            while (input_tryagain.equals("y") || input_tryagain.equals("Y"));
+    }
+}
