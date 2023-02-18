@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.ArrayList;
+class StudentRollNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of students: ");
+        int number= sc.nextInt();
+
+        ArrayList<Integer> list = new ArrayList<Integer>();
+
+        // Crerating loop for taking input from the user;
+        for (int i = 0; i < number; i++) {
+            System.out.println("Enter the "+(i+1)+ " student's roll number: ");
+          //  int rollnumber= sc.nextInt();
+            list.add(sc.nextInt());
+        }
+        System.out.println("The Total number of students is: "+list.size());
+        System.out.println(list);
+
+    }
+}
