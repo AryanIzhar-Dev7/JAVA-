@@ -1,0 +1,57 @@
+import java.util.Scanner;
+//import java.lang.String;
+ class Encyption {
+    public static void main(String[] args) {
+
+        Scanner sc= new Scanner (System.in);
+
+
+        System.out.println("Enter a messege:");
+        String message=sc.nextLine();// taking intput
+        int key;
+        int[] arr =new int[message.length()];
+
+        do {
+            System.out.println("Enter a key  1 to see the decryted  message : ");
+            System.out.println("Enter a key  2 to see the Original  message : ");
+            System.out.println("Enter any key to exit except 1 and 2  : ");
+            key = sc.nextInt();
+
+            if (key == 1) {
+
+                for (int i = 0; i < message.length(); i++) {
+                    int x = (int) message.charAt(i) + 2;
+                    arr[i] = x;
+                }
+                System.out.println("The encrypted message is:");
+                // Display the encrypted message;
+                for (int y = 0; y < arr.length; y++) {
+                    System.out.print(arr[y] + "  ");
+                }
+                System.out.println();   }
+            else if (key == 2) {
+                // converting encrypted message into Original;
+                System.out.println(" ");
+                char dec[] = new char[arr.length];
+                for (int a = 0; a < arr.length; a++) {
+                    char decrypted = (char) ((char) (arr[a]) - 2);
+                    dec[a] = decrypted;
+                }
+                // Displau Original message;
+                for (int z = 0; z < dec.length; z++) {
+                    System.out.print(dec[z]);
+                }
+                System.out.println();
+            }
+        } while (key== 1 || key== 2);
+
+
+
+
+
+
+
+
+    }
+
+}
