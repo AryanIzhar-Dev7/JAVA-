@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+class ArrList {
+    public static void main(String[] args) {
+        //Creating an ArrayList;
+    ArrayList<Integer>  list = new ArrayList<Integer>();
+
+    // Adding elements to the ArrayList;
+        list.add(0);
+        list.add(2);
+        list.add(4);
+    // Getting  the ArrayList Members by Using Get Method;
+        int member=list.get(0);
+        int member1=list.get(1);
+
+        //Printing the Members;
+        System.out.println(member);
+        System.out.println(member1);
+    }
+
+
+    }
