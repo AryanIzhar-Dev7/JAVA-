@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+class ArrList {
+    public static void main(String[] args) {
+        //Creating an ArrayList;
+    ArrayList<Integer>  list = new ArrayList<Integer>();
+
+    // Adding elements to the ArrayList;
+        list.add(0);
+        list.add(2);
+        list.add(4);
+        list.add(6);
+
+        // Adding an  element in between  the ArrayList;
+        list.add(2,3);
+        list.add(1,13);
+
+        //Printing the ArrayList;
+        System.out.println(list);
+    }
+
+
+    }
