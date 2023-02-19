@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Strings {
+    public static void main(String args [] ){
+        Scanner sc = new Scanner(System.in);// Creater new object;
+        System.out.println("Enter a String");
+        String input = sc.nextLine(); // Taking input from user;
+
+        //Displaying the String And String Length;
+        System.out.println("The Total Length of the Entered String is " +input.length());
+        System.out.println(input);
+
+    }
+}
