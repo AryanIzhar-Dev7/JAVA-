@@ -1,0 +1,23 @@
+public class StringBuilderDemo {
+    public static void main(String[] args) {
+
+        //Declaration of StringBuilder;
+        
+        StringBuilder sb = new StringBuilder("Itachi ");
+
+        // Printing the StringBuilder;
+        System.out.println(sb);
+
+        // Adding  elements at the of StringBuilder;
+        sb.append("U");
+        sb.append("c");
+        sb.append("h");
+        sb.append("i");
+        sb.append("h");
+        sb.append("a");
+
+        // Printing the StringBuilder;
+        System.out.println(sb);
+
+    }
+}
