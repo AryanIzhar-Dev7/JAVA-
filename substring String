@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Strings {
+    public static void main(String args [] ){
+        Scanner sc = new Scanner(System.in);// Creater new object;
+
+            System.out.println("Enter a String");
+            String input = sc.nextLine(); // Taking input from user;
+
+            // input of string stating index;
+            System.out.println("Enter form which index you want to select ");
+            int start=sc.nextInt();
+            // input of Ending index;
+            System.out.println("Enter the index to which you want to end ");
+            int end=sc.nextInt();
+            // Printing the substring of string;
+            System.out.println(input.substring(start,end));
+
+                }
+}
